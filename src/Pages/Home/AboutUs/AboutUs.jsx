@@ -55,7 +55,7 @@ const AboutUs = () => {
                     <p className="dark:text-white text-slate-700">
                       Whether you're a young athlete with a dream, a parent
                       looking to support your child's passion, or a seasoned
-                      player aiming for new heights, Northern Sports Academy
+                      player aiming for new heights,Ars Kreedashala
                       welcomes you. Join us on a journey of skill development,
                       camaraderie, and sportsmanship.
                     </p>
