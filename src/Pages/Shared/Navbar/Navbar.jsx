@@ -113,6 +113,7 @@ const Navbar = () => {
         </a>
         </Link>
       </li>
+      
       <li>
       <Link to={"/contact"}>
         <a
@@ -152,7 +153,12 @@ const Navbar = () => {
       ) : (
         <>
           <li>
+            <a
+            className={activeNav === "#login" ? " active_link" : ""}
+            onClick={() => setActiveNav("#login")}
+            >
             <Link to="/login">Login</Link>
+            </a>
           </li>
         </>
       )}

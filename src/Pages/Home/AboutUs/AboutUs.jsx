@@ -4,6 +4,7 @@ import Container from '../../../Components/Container/Container';
 import logo from '../../../assets/logo/logo1.png';
 import FadeInAnimation from '../../../Components/FadeInAnimation/FadeInAnimation';
 import Reavel from '../../../Components/Reveal/Reavel';
+import './about.css';
 
 const AboutUs = () => {
     return (
@@ -55,7 +56,7 @@ const AboutUs = () => {
                     <p className="dark:text-white text-slate-700">
                       Whether you're a young athlete with a dream, a parent
                       looking to support your child's passion, or a seasoned
-                      player aiming for new heights,Ars Kreedashala
+                      player aiming for new heights, Northern Sports Academy
                       welcomes you. Join us on a journey of skill development,
                       camaraderie, and sportsmanship.
                     </p>
@@ -80,7 +81,7 @@ const AboutUs = () => {
                     </Reavel>
                     <ul className="list-disc ps-6">
                       <Reavel>
-                        <li>
+                        <li className="list-item-gap" >
                           <span className="font-semibold">
                             Expert Coaching:
                           </span>{" "}
@@ -91,9 +92,10 @@ const AboutUs = () => {
                           athletics.
                         </li>
                       </Reavel>
+                     
                       <Reavel>
                         {" "}
-                        <li>
+                        <li className="list-item-gap">
                           <span className="font-semibold">
                             State-of-the-Art Facilities:
                           </span>{" "}
@@ -107,7 +109,7 @@ const AboutUs = () => {
                       </Reavel>
                       
                       <Reavel>
-                        <li>
+                        <li className="list-item-gap">
                           <span className="font-semibold">
                             Sportsmanship and Values:
                           </span>{" "}
@@ -118,12 +120,12 @@ const AboutUs = () => {
                         </li>
                       </Reavel>
                       <Reavel>
-                        <li>
+                        <li className="list-item-gap">
                           <span className="font-semibold">
                             Community and Support:
                           </span>{" "}
                           {""}
-                          At Northern Sports Academy, we're more than a team;
+                         At Ars Kreedashala, we're more than a team;
                           we're a family. Our supportive community of athletes,
                           parents, and coaches creates an atmosphere of
                           encouragement and camaraderie.
