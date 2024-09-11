@@ -13,7 +13,10 @@ const ProgramCard = ({ program,index }) => {
         <h2 className="card_effect text-white text-2xl md:text-3xl font-bold  translate-y-2 group-hover:-translate-y-4">
           {name}
         </h2>
-        <Link className="card_effect text-white hover:text-amber-500 font-semibold mt-2  translate-y-2 opacity-0 group-hover:opacity-100 group-hover:-translate-y-4">
+        <Link 
+          className="card_effect text-white hover:text-amber-500 font-semibold mt-2 translate-y-2 opacity-0 group-hover:opacity-100 group-hover:-translate-y-4" 
+          to={`/program/${program.id}`}
+        >
           Read More
         </Link>
       </div>

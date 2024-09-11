@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTypewriter,Cursor } from 'react-simple-typewriter';
-
+import "./TypingEffect.css";
 const TypingEffect = () => {
     const [texts] = useTypewriter({
         words:['Football','Cricket','Tennis','Badminton','Rugby','Baseball','Basketball','Swimming','Volleyball'],
@@ -10,7 +10,7 @@ const TypingEffect = () => {
     })
     return (
       <div className="text-white">
-        <h2 className="md:text-6xl text-4xl font-bold">
+        <h2 className="md:text-6xl text-4xl font-bold" id='ars-text'>
          Ars <span>Kreedashala</span>
         </h2>
         <h4 className="md:text-4xl text-3xl my-5 font-semibold bg-red-500 md:w-4/6 w-11/12 rounded mx-auto py-2.5 px-1">

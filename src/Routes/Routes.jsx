@@ -10,6 +10,7 @@ import Instructors from '../Pages/Home/Instructors/Instructors';
 import AboutUs from '../Pages/Home/AboutUs/AboutUs';
 import ContactUs from '../Pages/Home/ContactUs/ContactUs';
 import Signup from '../Pages/Home/Login/Signup';
+import ProgramDetails from '../Pages/Home/SportsProgrammes/ProgramDetails';
 
 const router = createBrowserRouter([
     {
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
             {
                 path:'/signup',
                 element:<Signup />
+            },
+
+            {
+                path:'/program/:id',
+                element:<ProgramDetails />
             }
         ]
     }
