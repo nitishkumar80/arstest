@@ -40,7 +40,7 @@ const Reavel = ({children}) => {
             bottom: 4,
             left: 0,
             right: 0,
-            background: "#FFC107",
+            background: "#68A9D3",
             zIndex: 20,
           }}
         />

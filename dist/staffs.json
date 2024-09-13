@@ -1,56 +1,59 @@
 [
     {
-      "name": "John Doe",
-      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "name": "Sumit Singh",
+      "image": "https://static.toiimg.com/thumb/msid-75452885,width-400,resizemode-4/75452885.jpg",
       "designation": "Head Coach",
       "experience": 10,
       "ratings": 4.8
     },
     {
-      "name": "Jane Smith",
-      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "designation": "Assistant Coach",
-      "experience": 8,
-      "ratings": 4.5
+      "name": "Komal Priya",
+      "image": "https://pbs.twimg.com/profile_images/778317520734420996/BY1wtu_t_400x400.jpg",
+      "designation": "Physiotherapist",
+      "experience": 4,
+      "ratings": 4.4
     },
+   
+  
     {
-      "name": "Mike Johnson",
-      "image": "https://images.unsplash.com/photo-1579038773867-044c48829161?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "designation": "Fitness Trainer",
-      "experience": 7,
-      "ratings": 4.7
-    },
-    {
-      "name": "Sara Williams",
-      "image": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "name": "Rahul Kumar",
+      "image": "https://www.royalchallengers.com/PRRCB01/public/styles/1061x767_landscape/public/2020-07/Rahul%20Dravid.jpg?h=7ada16aa&itok=OYMMIrPc",
       "designation": "Sports Psychologist",
       "experience": 6,
       "ratings": 4.3
     },
     {
-      "name": "David Brown",
-      "image": "https://images.unsplash.com/photo-1581382575275-97901c2635b7?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "name": "Supriya Singh",
+      "image": "https://media.licdn.com/dms/image/D4E03AQEOW2S8QZSECA/profile-displayphoto-shrink_200_200/0/1682264076173?e=2147483647&v=beta&t=Mp3jBuEyorJF02YFDjdcCIJVhE3yUJbH2EYCMqGH27k",
       "designation": "Nutritionist",
       "experience": 5,
       "ratings": 4.6
     },
+  
     {
-      "name": "Mark Davis",
-      "image": "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?auto=format&fit=crop&q=80&w=1528&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "designation": "Physiotherapist",
-      "experience": 4,
-      "ratings": 4.4
-    },
-    {
-      "name": "Robert Lee",
-      "image": "https://images.unsplash.com/flagged/photo-1573603867003-89f5fd7a7576?auto=format&fit=crop&q=80&w=1492&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "name": "Neha Mehra",
+      "image": "https://www.sustainability.rw.fau.eu/files/2022/04/supriya-singh-300x257.jpg",
       "designation": "Skill Coach",
       "experience": 6,
       "ratings": 4.7
     },
     {
-      "name": "Lisa Taylor",
-      "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "name": "Pawan Mehta",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3zxKyehrWu9BCHVcOhk7KWjvYc9ADsWUZ1g&s",
+      "designation": "Fitness Trainer",
+      "experience": 7,
+      "ratings": 4.7
+    },
+    {
+      "name": "Rohan Suman",
+      "image": "https://sportsmatik.com/uploads/users-media/profile-pic/whatsapp-image-2020-01-28-at-12-26-22-pm_1580195643.jpeg",
+      "designation": "Assistant Coach",
+      "experience": 8,
+      "ratings": 4.5
+    },
+    {
+      "name": "Surbhi Singh",
+      "image": "https://t4.ftcdn.net/jpg/03/83/80/97/360_F_383809707_Wb3a2lrXqCUDZVp9joaWqK5K9RcGkd96.jpg",
       "designation": "Team Manager",
       "experience": 5,
       "ratings": 4.2

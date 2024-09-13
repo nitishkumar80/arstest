@@ -11,6 +11,7 @@ import AboutUs from '../Pages/Home/AboutUs/AboutUs';
 import ContactUs from '../Pages/Home/ContactUs/ContactUs';
 import Signup from '../Pages/Home/Login/Signup';
 import ProgramDetails from '../Pages/Home/SportsProgrammes/ProgramDetails';
+import Membership from '../Pages/Home/Membership/Membership';
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
                 path:'/instructors',
                 element:<Instructors />
             },
+            {
+                path:'/Membership',
+                element:<Membership />
+            },
+
             {
                 path:'/about',
                 element:<AboutUs />

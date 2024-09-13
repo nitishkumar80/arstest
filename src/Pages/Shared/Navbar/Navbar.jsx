@@ -78,7 +78,7 @@ const Navbar = () => {
         </a>
         </Link>
       </li>
-      <li>
+      {/* <li>
       <Link to={"/facilities"}>
         <a
           // href="#facilities"
@@ -88,16 +88,16 @@ const Navbar = () => {
           Facilities
         </a>
         </Link>
-      </li>
+      </li> */}
       <li>
 
-      <Link to={"/instructors"}>
+      <Link to={"/Membership"}>
         <a
           // href="#instructors"
-          className={activeNav === "#instructors" ? " active_link" : ""}
-          onClick={() => setActiveNav("#instructors")}
+          className={activeNav === "#Membership" ? " active_link" : ""}
+          onClick={() => setActiveNav("#Membership")}
         >
-          Instructors
+         Membership
         </a>
         </Link>
       </li>

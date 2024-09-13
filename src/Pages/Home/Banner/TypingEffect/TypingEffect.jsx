@@ -25,9 +25,10 @@ const TypingEffect = () => {
           academic support, both of which are individually personalised to meet
           your unique needs and aspirations. Because your goals are ours too.
         </p>
-        <button className="btn bg-transparent border-2 border-amber-500 text-white px-5 transition-all hover:scale-95 hover:bg-amber-500 hover:border-amber-500">
-          Learn More
-        </button>
+        <button className="btn bg-transparent border-2 border-[#68A9D3] text-white px-5 transition-all hover:scale-95 hover:bg-[#68A9D3] hover:border-[#68A9D3]">
+Learn More
+</button>
+
       </div>
     );
 };
