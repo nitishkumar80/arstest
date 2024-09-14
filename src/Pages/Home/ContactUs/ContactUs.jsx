@@ -8,7 +8,7 @@ import FadeInAnimation from '../../../Components/FadeInAnimation/FadeInAnimation
 const ContactUs = () => {
     return (
       <div
-        className="dark:bg-gray-700 bg-amber-300 pb-10 lg:pb-20"
+        className="dark:bg-gray-700 bg-cyan-300 pb-10 lg:pb-20"
         id="contactus"
       >
         <SectionHeader heading={"Contact Us"}></SectionHeader>

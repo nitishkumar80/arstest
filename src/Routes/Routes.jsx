@@ -12,6 +12,9 @@ import ContactUs from '../Pages/Home/ContactUs/ContactUs';
 import Signup from '../Pages/Home/Login/Signup';
 import ProgramDetails from '../Pages/Home/SportsProgrammes/ProgramDetails';
 import Membership from '../Pages/Home/Membership/Membership';
+import App from '../App';
+import Blogs from '../Pages/Home/Blogs/Blogs';
+import BlogDetails from '../Pages/Home/Blogs/BlogDetails';
 
 const router = createBrowserRouter([
     {
@@ -50,6 +53,18 @@ const router = createBrowserRouter([
             },
 
             {
+                path:'/blogs',
+                element:<Blogs />
+            },
+
+            {
+                path:'/blog/:id',
+                element:<BlogDetails />
+            },
+
+
+
+            {
                 path:'/contact',
                 element:<ContactUs />
             },
@@ -62,7 +77,14 @@ const router = createBrowserRouter([
             {
                 path:'/program/:id',
                 element:<ProgramDetails />
+            },
+
+
+            {
+                path: '/app',
+                element: <App />
             }
+
         ]
     }
 ])

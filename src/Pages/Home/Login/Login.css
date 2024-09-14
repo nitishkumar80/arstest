@@ -185,10 +185,15 @@
 
 @media(max-width: 768px) {
     .login-inner-container .left-side>h1 {
-        font-size: 30px;
+        font-size: 50px;
+   
     }
 
     .login-inner-container .left-side>.login-subheading {
         font-size: 12px;
+    }
+
+    .login-heading{
+        margin-top: -390px;
     }
 }

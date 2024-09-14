@@ -16,7 +16,7 @@ const Signup = () => {
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
             >
-              Join Us Today!
+          Signup to <span style={{ color: "#06b6d4" }}>Ars Kreedashala</span>
             </motion.h1>
             <motion.p
               initial={{ x: -100, opacity: 0 }}
@@ -28,13 +28,7 @@ const Signup = () => {
           </div>
 
           <div className="right-side">
-            <motion.h1
-              initial={{ y: -100, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
-              className="signup-heading"
-            >
-              Signup to <span style={{ color: "#ffbe33" }}>Ars Kreedashala</span>
-            </motion.h1>
+           
 
             {/* Third Party Signup */}
             <div className="third-party-signup">
@@ -60,13 +54,13 @@ const Signup = () => {
               </motion.div>
             </div>
 
-            <motion.p
+            {/* <motion.p
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1, transition: { delay: 0.6 } }}
               className="or"
             >
               or use your email to register
-            </motion.p>
+            </motion.p> */}
 
             <motion.input
               initial={{ opacity: 0, x: 100 }}
@@ -106,8 +100,7 @@ const Signup = () => {
             </motion.button>
 
             <motion.p
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 1.8 } }}
+    
               className="login-link"
             >
               Already have an account?{" "}

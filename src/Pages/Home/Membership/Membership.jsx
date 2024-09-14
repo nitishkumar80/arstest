@@ -36,7 +36,7 @@ const memberships = [
 
 const Membership = () => {
   return (
-    <div className="dark:bg-gray-700 bg-amber-300 pb-10 lg:pb-20" id="membership">
+    <div className="dark:bg-gray-700 bg-cyan-300 pb-10 lg:pb-20" id="membership">
       <SectionHeader heading={"Membership Plans"}></SectionHeader>
       <Container>
         <div className="text-center">
