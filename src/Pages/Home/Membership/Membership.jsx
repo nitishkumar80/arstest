@@ -3,7 +3,7 @@ import SectionHeader from "../../../Components/SectionHeader/SectionHeader";
 import Container from "../../../Components/Container/Container";
 import FadeInAnimation from "../../../Components/FadeInAnimation/FadeInAnimation";
 import Reavel from "../../../Components/Reveal/Reavel";
-import "./membership.css";
+
 
 const memberships = [
   {
