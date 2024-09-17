@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTypewriter,Cursor } from 'react-simple-typewriter';
 import "./TypingEffect.css";
+import { Link } from "react-router-dom";
 const TypingEffect = () => {
     const [texts] = useTypewriter({
-        words:['Football','Cricket','Tennis','Badminton','Rugby','Baseball','Basketball','Swimming','Volleyball'],
+        words:['Football','Cricket','Badminton','Swimming','Volleyball'],
         loop:{},
         typeSpeed:300,
         delaySpeed:80
@@ -14,7 +15,10 @@ const TypingEffect = () => {
          Ars <span>Kreedashala</span>
         </h2>
         <h4 className="md:text-4xl text-3xl my-5 font-semibold bg-red-500 md:w-4/6 w-11/12 rounded mx-auto py-2.5 px-1">
-          Admission Going On
+       
+          <Link to={"/comePlay"} >
+         Come & Play
+              </Link>
         </h4>
         <div className="md:text-3xl text-2xl font-semibold">
           <span>{texts}</span>

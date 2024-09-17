@@ -3,7 +3,7 @@ import SectionHeader from "../../../Components/SectionHeader/SectionHeader";
 import Container from "../../../Components/Container/Container";
 import FadeInAnimation from "../../../Components/FadeInAnimation/FadeInAnimation";
 import Reavel from "../../../Components/Reveal/Reavel";
-import "./membership.css";
+
 
 const memberships = [
   {
@@ -36,7 +36,7 @@ const memberships = [
 
 const Membership = () => {
   return (
-    <div className="dark:bg-gray-700 bg-cyan-300 pb-10 lg:pb-20" id="membership">
+    <div className="dark:bg-gray-700 bg-[#68a9d3] pb-10 lg:pb-20" id="membership">
       <SectionHeader heading={"Membership Plans"}></SectionHeader>
       <Container>
         <div className="text-center">

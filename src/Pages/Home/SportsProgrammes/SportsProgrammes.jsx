@@ -88,7 +88,7 @@ const SportsProgrammes = ({ searchQuery }) => {
   };
 
   return (
-    <div className="dark:bg-gray-700 bg-cyan-300 pb-10 md:pb-20" id="programmes">
+    <div className=" dark:bg-gray-700 bg-[#68a9d3]  text-gray-700 pb-10 md:pb-20" id="programmes">
       <Container>
         <SectionHeader heading={"Our Sports Programmes"} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

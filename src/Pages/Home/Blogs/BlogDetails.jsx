@@ -20,7 +20,7 @@ const BlogDetails = () => {
   if (!blog) return <div className="fade-in">Loading...</div>;
 
   return (
-    <div className="dark:bg-gray-700 bg-red-300 text-gray-900 dark:text-white">
+    <div className="dark:bg-gray-700 bg-[#68a9d3]  text-gray-700 dark:text-white">
       <Container>
         <div className="flex flex-col items-center justify-center min-h-screen p-8">
           {/* Blog Content */}

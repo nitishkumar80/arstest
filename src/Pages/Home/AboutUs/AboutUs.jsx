@@ -1,14 +1,14 @@
 import React from "react";
 import SectionHeader from "../../../Components/SectionHeader/SectionHeader";
 import Container from "../../../Components/Container/Container";
-import logo from "../../../assets/logo/logo1.png";
+import logo from "../../../assets/logo/logo2.png";
 import FadeInAnimation from "../../../Components/FadeInAnimation/FadeInAnimation";
 import Reavel from "../../../Components/Reveal/Reavel";
 import "./about.css";
 
 const AboutUs = () => {
   return (
-    <div className="dark:bg-gray-700 bg-red-300 pb-10 lg:pb-20" id="aboutus">
+    <div className="dark:bg-gray-700 bg-[#68a9d3] pb-10 lg:pb-20" id="aboutus">
       <SectionHeader heading={"About Us"}></SectionHeader>
       <Container>
         <div className="grid grid-cols-1 gap-10">

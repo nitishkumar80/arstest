@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Login = () => {
   return (
-    <>
+    <div className="dark:bg-gray-700 bg-[#68a9d3]  bg:text-white text-base font-semibold dark:text-white pb-10 md:pb-20">
       <div className="login-container">
         <div className="login-inner-container">
           <div className="left-side">
@@ -111,7 +111,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

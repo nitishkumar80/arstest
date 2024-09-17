@@ -265,10 +265,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
-import logo from "../../../assets/logo/logo1.png";
-import rlogo from "../../../assets/logo/logoR.png";
+import logo from "../../../assets/logo/logo2.png";
+import rlogo from "../../../assets/logo/logoN.png";
 import useReadingProgress from "../../../Hooks/useReadingProgress";
-
+// import './nav.css';
 const Navbar = ({ setSearchQuery }) => {
   const user = null;
   const [activeNav, setActiveNav] = useState("#home");
@@ -339,13 +339,29 @@ const Navbar = ({ setSearchQuery }) => {
           </a>
         </Link>
       </li>
+
+
       <li>
-        <Link to={"/Membership"}>
+        <Link to={"/service"}>
+          <a
+            className={activeNav === "#service" ? " active_link" : ""}
+            onClick={() => setActiveNav("#service")}
+          >
+           Service
+          </a>
+        </Link>
+      </li>
+
+
+
+
+      <li>
+        <Link to={"/membership"}>
           <a
             className={activeNav === "#Membership" ? " active_link" : ""}
             onClick={() => setActiveNav("#Membership")}
           >
-           Plan
+  Membership
           </a>
         </Link>
       </li>
@@ -425,7 +441,7 @@ const Navbar = ({ setSearchQuery }) => {
           <div className="dropdown">
             <label
               tabIndex={0}
-              className="btn btn-ghost bg-cyan-500 lg:hidden hover:bg-cyan-600"
+              className="btn btn-ghost bg-[#68a9d3] lg:hidden hover:bg-[#68a9d3]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -444,7 +460,7 @@ const Navbar = ({ setSearchQuery }) => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-cyan-500 dark:bg-gray-700 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#68a9d3] dark:bg-gray-700 rounded-box w-52"
             >
               {navOptions}
             </ul>

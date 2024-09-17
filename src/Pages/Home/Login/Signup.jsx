@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Signup = () => {
   return (
-    <>
+    <div className="dark:bg-gray-700 bg-[#68a9d3]  bg:text-white text-base font-semibold dark:text-white pb-10 md:pb-20">
       <div className="signup-container">
         <div className="signup-inner-container">
           <div className="left-side">
@@ -111,7 +111,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

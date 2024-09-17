@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Football",
       "description": "Join our football program and enhance your soccer skills. Suitable for all ages and skill levels.",
-      "image1": "https://i.ibb.co/8M69gtp/football-5754946-1280.jpg",
+      "image1": "https://miro.medium.com/v2/resize:fit:1176/1*pBcB4qLn2IEAIjCC9DZIgw.jpeg",
       "schedule": "Mondays, Wednesdays, and Fridays from 4 PM to 6 PM",
       "coaches": [
         {
@@ -23,7 +23,7 @@
       "id": 2,
       "name": "Cricket",
       "description": "Learn the art of cricket with our experienced coaches. Suitable for beginners and advanced players.",
-      "image1": "https://i.ibb.co/PjwMF9j/cricket-724621-1280.jpg",
+      "image1": "https://img.freepik.com/free-vector/hand-drawn-ipl-cricket-illustration_23-2149213601.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726358400&semt=ais_hybrid",
       "schedule": "Tuesdays and Thursdays from 5 PM to 7 PM",
       "coaches": [
         {
@@ -43,7 +43,7 @@
       "id": 3,
       "name": "Gym",
       "description": "Master the fundamentals of fitness with guidance from our expert trainers. Perfect for individuals at any fitness level looking to achieve their goals.",
-      "image1": "https://freedesignfile.com/upload/2016/10/Strong-male-gym-workout-biceps-HD-picture.jpg",
+      "image1": "https://img.freepik.com/free-photo/cartoon-machines-gym_23-2151149016.jpg",
       "schedule": "Wednesdays and Saturdays from 3 PM to 5 PM",
       "coaches": [
         {
