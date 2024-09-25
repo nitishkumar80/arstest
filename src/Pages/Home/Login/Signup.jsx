@@ -1,113 +1,155 @@
-import React from "react";
-import "./Signup.css";
-import { FaGoogle } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [role, setRole] = useState("guest");
+  const navigate = useNavigate();
+
+  const handleSignup = (e) => {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+    console.log({ name, email, password, role });
+    // Handle signup logic here
+    if (role === "guest") navigate("/guest-dashboard");
+    if (role === "coach") navigate("/coach-dashboard");
+    if (role === "champ") navigate("/champ-dashboard");
+  };
+
   return (
-    <div className="dark:bg-gray-700 bg-[#68a9d3]  bg:text-white text-base font-semibold dark:text-white pb-10 md:pb-20">
-      <div className="signup-container">
-        <div className="signup-inner-container">
-          <div className="left-side">
-            <motion.h1
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-            >
-          Signup to <span style={{ color: "#06b6d4" }}>Ars Kreedashala</span>
-            </motion.h1>
-            <motion.p
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1, transition: { delay: 0.2 } }}
-              className="signup-subheading"
-            >
-              Create Your Account and Get Started
-            </motion.p>
-          </div>
+    <div
+      className="flex items-center justify-center min-h-screen bg-no-repeat bg-cover bg-center backdrop-blur-lg p-4 sm:p-6 "
+      style={{
+        backgroundImage: `url('https://png.pngtree.com/thumb_back/fh260/background/20230625/pngtree-minimalist-cartoon-search-bar-element-in-3d-illustration-on-light-blue-image_3677201.jpg')`,
+      }}
+    >
+      <div className="  flex flex-col sm:flex-row w-full max-w-lg sm:max-w-4xl bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden ">
+        {/* Left Side - Image */}
+        <div
+          className="hidden sm:block sm:w-1/2 bg-cover bg-center my-9"
+          style={{
+            backgroundImage: `url('https://cdni.iconscout.com/illustration/premium/thumb/sign-up-illustration-download-in-svg-png-gif-file-formats--account-login-miscellaneous-pack-illustrations-5230178.png')`,
+          }}
+        ></div>
 
-          <div className="right-side">
-           
+        {/* Right Side - Signup Form */}
+        <div className="w-full sm:w-1/2 p-6 sm:p-8 bg-cyan-500">
+          <h2 className="text-2xl font-bold mb-6 text-center text-black dark:text-white">
+            Create Your Account
+          </h2>
 
-            {/* Third Party Signup */}
-            <div className="third-party-signup">
-              <motion.div
-                initial={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
+          {/* Signup Form */}
+          <form onSubmit={handleSignup}>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+                htmlFor="name"
               >
-                {" "}
-                <FaGoogle className="signup-icon" />
-              </motion.div>
-              <motion.div
-                initial={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1, transition: { delay: 0.2 } }}
-              >
-                {" "}
-                <FaFacebookF className="signup-icon" />
-              </motion.div>
-              <motion.div
-                initial={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1, transition: { delay: 0.4 } }}
-              >
-                <FaGithub className="signup-icon" />
-              </motion.div>
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="w-full px-3 py-2 border rounded-lg shadow-sm dark:bg-gray-700 dark:text-white"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
 
-            {/* <motion.p
-              initial={{ y: 100, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1, transition: { delay: 0.6 } }}
-              className="or"
-            >
-              or use your email to register
-            </motion.p> */}
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="w-full px-3 py-2 border rounded-lg shadow-sm dark:bg-gray-700 dark:text-white"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
 
-            <motion.input
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0, transition: { delay: 0.8 } }}
-              className="username"
-              type="text"
-              placeholder="Username"
-            />
-            <motion.input
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0, transition: { delay: 1 } }}
-              className="email"
-              type="text"
-              placeholder="Email"
-            />
-            <motion.input
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 1.2 } }}
-              className="password"
-              type="password"
-              placeholder="Password"
-            />
-            <motion.input
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 1.4 } }}
-              className="password"
-              type="password"
-              placeholder="Confirm Password"
-            />
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+                htmlFor="password"
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                className="w-full px-3 py-2 border rounded-lg shadow-sm dark:bg-gray-700 dark:text-white"
+                placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
 
-            <motion.button
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: 1.6 } }}
-              className="signup-btn"
-            >
-              Signup
-            </motion.button>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+                htmlFor="confirmPassword"
+              >
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                id="confirmPassword"
+                className="w-full px-3 py-2 border rounded-lg shadow-sm dark:bg-gray-700 dark:text-white"
+                placeholder="Confirm your password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+            </div>
 
-            <motion.p
-    
-              className="login-link"
+            {/* Role Selection */}
+            <div className="mb-6">
+              <label className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">
+                Role
+              </label>
+              <select
+                value={role}
+                onChange={(e) => setRole(e.target.value)}
+                className="w-full px-3 py-2 border rounded-lg shadow-sm dark:bg-gray-700 dark:text-white"
+              >
+                <option value="guest">Guest</option>
+                <option value="coach">Coach</option>
+                <option value="champ">Champ</option>
+              </select>
+            </div>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
             >
-              Already have an account?{" "}
-              <Link to={"/login"} className="login">
-                Login
-              </Link>
-            </motion.p>
+              Sign Up
+            </button>
+          </form>
+
+          {/* Links */}
+          <div className="mt-6 text-center">
+            <span className="text-sm dark:text-gray-300 text-gray-800">
+              Already have an account?
+            </span>
+            <a
+              href="/login"
+              className="text-sm text-blue-700 hover:underline ml-1"
+            >
+              Login
+            </a>
           </div>
         </div>
       </div>

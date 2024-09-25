@@ -8,7 +8,7 @@ const Banner = () => {
         <div id='home'
           className="hero min-h-screen !px-0"
           style={{
-            backgroundImage: "url(https://i.ibb.co/P4mH9qT/banner.webp)",loading:"lazy"
+            backgroundImage: "url(https://i.postimg.cc/Y0DsF41f/background-2.jpg)",loading:"lazy"
           }}
         >
             <div className='hero-overlay bg-opacity-60 dark:bg-opacity-80'></div>

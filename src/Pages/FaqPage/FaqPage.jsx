@@ -44,7 +44,7 @@ const FaqPage = () => {
         {faqData.map((item, index) => (
           <div key={index} className="faq-item">
             <div className="faq-question" onClick={() => toggleAnswer(index)}>
-              <h2>{item.question}</h2>
+              <h2 className="question">{item.question}</h2>
               {activeIndex === index ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {activeIndex === index && (

@@ -24,10 +24,8 @@ const TypingEffect = () => {
           <span>{texts}</span>
           <Cursor cursorStyle="." cursorColor="white" />
         </div>
-        <p className="my-3">
-          We offer flexible and porous educational pathways, and provide
-          academic support, both of which are individually personalised to meet
-          your unique needs and aspirations. Because your goals are ours too.
+        <p className="my-3 text-justify">
+        Kreedshala integrates sports into education for holistic development. With a globally aligned P.E. curriculum, it promotes health, fitness, and values like discipline and teamwork. Combining theory and practice, Kreedshala empowers students with skills for success both in sports and life.
         </p>
         <button className="btn bg-transparent border-2 border-[#68A9D3] text-white px-5 transition-all hover:scale-95 hover:bg-[#68A9D3] hover:border-[#68A9D3]">
 Learn More

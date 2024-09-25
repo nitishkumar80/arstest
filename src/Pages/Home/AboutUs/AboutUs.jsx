@@ -27,33 +27,22 @@ const AboutUs = () => {
                   <img className="w-48" src={logo} alt="logo" loading="lazy" />
                 </div>
                 <Reavel>
-                  <p className="dark:text-white text-slate-700">
+                  {/* <p className="dark:text-white text-slate-700">
                     Welcome to{" "}
                     <span className="font-semibold">ARS KREEDASHALA</span>,
                     where talent, teamwork, and determination come together to
                     create champions.
-                  </p>
+                  </p> */}
                 </Reavel>
                 <Reavel>
-                  <p className="dark:text-white text-slate-700">
-                    At ARS Kreedashala, we're not just shaping athletes; we’re
-                    building a sports community that thrives on passion,
-                    excellence, and the power of teamwork. Our mission goes
-                    beyond training — we strive to inspire, support, and nurture
-                    talent from every corner of society. Whether you’re an
-                    aspiring athlete or a seasoned professional, ARS Kreedashala
-                    provides the platform to reach your full potential
+                  <p className="dark:text-white text-slate-700 text-justify">
+                  Kreedshala, born from the vision of two passionate sports enthusiasts, is on a mission to weave sports into the core of every child’s education. The organization believes that sports education is essential for holistic development, rather than being just an extracurricular activity. With this philosophy, Kreedshala focuses on creating a structured Sports and Physical Education (P.E.) curriculum that aligns with internationally recognized standards. This well-designed curriculum serves as the foundation for promoting health, fitness, and well-being among students, ensuring they receive a high-quality sports education.
                   </p>
                 </Reavel>
                 <br />
                 <Reavel>
-                  <p className="dark:text-white text-slate-700">
-                    Whether you're a budding athlete chasing your dreams, a
-                    parent nurturing your child’s potential, or an experienced
-                    player striving for excellence, ARS Kreedashala is your
-                    home. Embark on a journey of growth, empowerment, and
-                    unmatched sportsmanship. Together, we build skills, foster
-                    friendships, and shape champions, both on and off the field.
+                  <p className="dark:text-white text-slate-700 text-justify">
+                  Kreedshala champions the values of inclusivity, accessibility, and excellence. Its educational approach emphasizes not only physical prowess but also the development of discipline, perseverance, and teamwork. By combining theoretical knowledge with practical experience, the organization aims to empower students with both the skills and the mindset needed to succeed in sports and beyond. With a dedication to excellence, Kreedshala is driving the integration of sports education into the lives of young learners, helping to mold well-rounded individuals prepared to thrive in all aspects of life.
                   </p>
                 </Reavel>
               </div>

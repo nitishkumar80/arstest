@@ -72,7 +72,7 @@ const Facilities = () => {
                     alt="gallery"
                     loading="lazy"
                     className="facilities_card_img"
-                    src="https://www.rubbuk.com/wp-content/uploads/sites/2/2022/03/DSC_0445.jpg"
+                    src="https://www.easigrass.com/wp-content/uploads/2019/09/chelsea-indoor-soccer-pitch.jpg"
                   />
                   <div className="facilities_card_overlay"></div>
                   <div className="absolute inset-0 text-white p-3 top-2/4 md:top-3/4">
@@ -96,7 +96,7 @@ const Facilities = () => {
                     alt="gallery"
                     loading="lazy"
                     className="facilities_card_img"
-                    src="https://www.prosportsurfaces.co.uk/wp-content/uploads/2020/02/outdoor-football-pitch.jpg"
+                    src="https://www.gym-flooring.com/cdn/shop/articles/etc-brighton-hove-3g-pitch.jpeg-1674579651931.jpg?v=1674580068&width=867"
                   />
                   <div className="facilities_card_overlay"></div>
                   <div className="absolute inset-0 text-white p-3 top-2/4 md:top-3/4">
