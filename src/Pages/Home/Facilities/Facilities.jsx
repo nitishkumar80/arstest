@@ -41,7 +41,7 @@ const Facilities = () => {
                     alt="gallery"
                     loading="lazy"
                     className="facilities_card_img"
-                    src="https://www.originpools.co.uk/images/2022/11/28/indoor-swimming-pool.webp"
+                    src="https://i.postimg.cc/fTzjY2W9/DALL-E-2024-09-28-23-29-43-A-landscape-image-of-a-Sw-imming-Complex-featuring-both-indoor-and-outdo.webp"
                   />
                   <div className="facilities_card_overlay"></div>
                   <div className="absolute inset-0 text-white p-3 top-2/4 md:top-3/4 lg:top-2/4">
@@ -57,7 +57,7 @@ const Facilities = () => {
                     alt="gallery"
                     loading="lazy"
                     className="facilities_card_img"
-                    src="https://www.mpsuk.net/wp-content/uploads/2022/01/school-sico-canteens.jpg"
+                    src="https://i.postimg.cc/zBTSF4Rn/DALL-E-2024-09-28-23-29-38-A-landscape-image-of-a-Healthy-Food-Canteen-showcasing-a-clean-modern.webp"
                   />
                   <div className="facilities_card_overlay"></div>
                   <div className="absolute inset-0 text-white p-3 top-2/4 lg:top-2/4 md:top-3/4">
@@ -72,7 +72,7 @@ const Facilities = () => {
                     alt="gallery"
                     loading="lazy"
                     className="facilities_card_img"
-                    src="https://www.easigrass.com/wp-content/uploads/2019/09/chelsea-indoor-soccer-pitch.jpg"
+                    src="https://i.postimg.cc/rpVkTLqp/DALL-E-2024-09-28-23-29-34-A-landscape-image-of-Indoor-Pitches-with-expertly-maintained-grounds-T.webp"
                   />
                   <div className="facilities_card_overlay"></div>
                   <div className="absolute inset-0 text-white p-3 top-2/4 md:top-3/4">
@@ -96,7 +96,7 @@ const Facilities = () => {
                     alt="gallery"
                     loading="lazy"
                     className="facilities_card_img"
-                    src="https://www.gym-flooring.com/cdn/shop/articles/etc-brighton-hove-3g-pitch.jpeg-1674579651931.jpg?v=1674580068&width=867"
+                    src="https://i.postimg.cc/HsMH42ST/DALL-E-2024-09-28-23-29-32-A-landscape-image-of-Outdoor-Synthetic-Sports-Pitches-featuring-well-m.webp"
                   />
                   <div className="facilities_card_overlay"></div>
                   <div className="absolute inset-0 text-white p-3 top-2/4 md:top-3/4">
@@ -111,7 +111,7 @@ const Facilities = () => {
                     alt="gallery"
                     loading="lazy"
                     className="facilities_card_img"
-                    src="https://levelfyc.com/wp-content/uploads/2021/09/lou-3803.jpg"
+                    src="https://i.postimg.cc/L5bwwNS4/DALL-E-2024-09-28-23-56-53-A-landscape-image-of-a-modern-gym-with-professional-trainers-featuring.webp"
                   />
                   <div className="facilities_card_overlay"></div>
                   <div className="absolute inset-0 text-white p-3 top-2/4 lg:top-2/4 md:top-3/4">
@@ -126,7 +126,7 @@ const Facilities = () => {
                     alt="gallery"
                     loading="lazy"
                     className="facilities_card_img"
-                    src="https://d2t6o06vr3cm40.cloudfront.net/2023/03/26/14/38/56/a1e14176-541b-4e92-bb37-44ede9180dc3/DSC04355.jpg"
+                    src="https://i.postimg.cc/fbmB8VGt/DALL-E-2024-09-28-23-29-21-A-landscape-image-showcasing-Player-Recovery-for-athletes-The-scene.webp"
                   />
                   <div className="facilities_card_overlay"></div>
                   <div className="absolute inset-0 text-white p-3 top-2/4 lg:top-2/4 md:top-3/4">

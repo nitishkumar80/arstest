@@ -316,6 +316,19 @@ const Navbar = ({ setSearchQuery }) => {
           </a>
         </Link>
       </li>
+
+
+
+      <li>
+        <Link to={"/about"}>
+          <a
+            className={activeNav === "#aboutus" ? " active_link" : ""}
+            onClick={() => setActiveNav("#aboutus")}
+          >
+            About
+          </a>
+        </Link>
+      </li>
       <li>
         <Link to={"/programmer"}>
           <a
@@ -327,20 +340,6 @@ const Navbar = ({ setSearchQuery }) => {
         </Link>
       </li>
      
-
-
-      <li>
-        <Link to={"/blogs"}>
-          <a
-            className={activeNav === "#blogs" ? " active_link" : ""}
-            onClick={() => setActiveNav("#blogs")}
-          >
-         Blogs
-          </a>
-        </Link>
-      </li>
-
-
       <li>
         <Link to={"/service"}>
           <a
@@ -351,9 +350,6 @@ const Navbar = ({ setSearchQuery }) => {
           </a>
         </Link>
       </li>
-
-
-
 
       <li>
         <Link to={"/membership"}>
@@ -367,15 +363,23 @@ const Navbar = ({ setSearchQuery }) => {
       </li>
 
       <li>
-        <Link to={"/about"}>
+        <Link to={"/blogs"}>
           <a
-            className={activeNav === "#aboutus" ? " active_link" : ""}
-            onClick={() => setActiveNav("#aboutus")}
+            className={activeNav === "#blogs" ? " active_link" : ""}
+            onClick={() => setActiveNav("#blogs")}
           >
-            About
+         Blogs
           </a>
         </Link>
       </li>
+
+
+
+
+
+
+
+     
 
 
      

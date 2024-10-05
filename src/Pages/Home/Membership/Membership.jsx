@@ -8,36 +8,45 @@ import Reavel from "../../../Components/Reveal/Reavel";
 const memberships = [
   {
     title: "Basic Membership",
-    description: "Access to all basic training sessions and facility usage.",
-    price: "$30 / month",
-    benefits: ["Access to gym", "Personal coach consultations", "Standard support"],
+    description: "Gain full access to our core training facilities and group sessions designed to improve your fitness and skill level.",
+    price: "3-Month Plan",
+    benefits: [
+      "Access to group training sessions",
+      "Access to standard fitness equipment",
+      "Weekly fitness assessments and tracking",
+       "Member discounts on selected sports gear and merchandise"
+    ],
   },
   {
     title: "Pro Membership",
-    description: "Enhanced training and priority booking for all sports facilities.",
-    price: "$60 / month",
+    description: "Elevate your training with enhanced access, priority bookings, and specialized programs tailored to your performance goals.",
+    price: "6-Month Plan",
     benefits: [
-      "All Basic Membership benefits",
-      "Priority access to courts and fields",
-      "Specialized training programs",
+      "Includes all Basic Membership perks",
+      "Priority booking for sports courts and facilities",
+      "Access to advanced training programs",
+      "Exclusive workshops and events"
     ],
   },
   {
     title: "Elite Membership",
-    description: "For athletes who demand the best, including personal coaching.",
-    price: "$100 / month",
+    description: "Designed for high-performance athletes, offering a fully personalized experience with one-on-one coaching and custom plans.",
+    price: "12-Month Plan",
     benefits: [
-      "All Pro Membership benefits",
-      "One-on-one coaching sessions",
-      "Customized diet and fitness plans",
+      "Includes all Pro Membership perks",
+      "Personalized one-on-one coaching sessions",
+      "Customized nutrition and fitness plans",
+      "Exclusive access to elite facilities and private areas",
+      
     ],
   },
 ];
 
+
 const Membership = () => {
   return (
-    <div className="dark:bg-gray-700 bg-[#68a9d3] pb-10 lg:pb-20" id="membership">
-      <SectionHeader heading={"Membership Plans"}></SectionHeader>
+    <div className="dark:bg-gray-700 bg-[#68a9d3] pb-10 lg:pb-20 text-justify" id="membership">
+      <SectionHeader heading={"Membership"}></SectionHeader>
       <Container>
         <div className="text-center">
           <Reavel>
@@ -61,10 +70,11 @@ const Membership = () => {
                   {membership.price}
                 </p>
                 <ul className="list-disc list-inside dark:text-gray-300 text-gray-600">
-                  {membership.benefits.map((benefit, i) => (
-                    <li key={i} className="mb-2">{benefit}</li>
-                  ))}
-                </ul>
+  {membership.benefits.map((benefit, i) => (
+    <li key={i} className="mb-2 text-center">{benefit}</li>
+  ))}
+</ul>
+
                 <button className="mt-6 bg-amber-500 text-white px-6 py-2 rounded-lg hover:bg-amber-600 transition">
                   Join Now
                 </button>

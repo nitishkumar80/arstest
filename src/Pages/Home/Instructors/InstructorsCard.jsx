@@ -8,7 +8,7 @@ const InstructorsCard = ({staff}) => {
       <div className="card card-compact max-w-md  shadow-xl">
         <figure>
           <img
-            className="w-96 h-96 object-cover hover:grayscale transition-all duration-300"
+            className="w-26 h-20 rounded-full object-cover hover:grayscale transition-all duration-300"
             src={image}
             alt="Shoes"
           />

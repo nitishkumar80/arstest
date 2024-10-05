@@ -33,7 +33,7 @@ const Blogs = ({ searchQuery }) => {
   return (
     <div className="dark:bg-gray-700 bg-[#68a9d3]  text-gray-700 text-base font-semibold dark:text-white pb-10 md:pb-20" id="blogs">
       <Container>
-        <SectionHeader heading={"Sports Blogs"} />
+        <SectionHeader heading={" Blogs"} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {visibleBlogs.map((blog, index) => (
             <FadeInAnimation custom={index} key={blog.id}>

@@ -18,7 +18,7 @@ const Service = () => {
 
   return (
     <div className="bg-[#68a9d3] dark:bg-gray-800 pb-10 lg:pb-20" id="services">
-      <SectionHeader heading={"Our Services"}></SectionHeader>
+      <SectionHeader heading={"Services"}></SectionHeader>
       <Container>
         <div className="text-center">
           <Reavel>
@@ -37,7 +37,7 @@ const Service = () => {
                   <img
                     src={service.img}
                     alt={service.title}
-                    className="rounded-md mb-4 w-full h-40 object-cover"
+                    className="rounded-md mb-4 w-full h-64 object-contain"
                   />
                   <h3 className="text-2xl font-bold dark:text-white text-gray-900 mb-4">
                     {service.title}
