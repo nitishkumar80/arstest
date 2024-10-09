@@ -5,15 +5,39 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("guest");
+  const [otp, setOtp] = useState("");
+  const [isOtpSent, setIsOtpSent] = useState(false);
+  const [isOtpVerified, setIsOtpVerified] = useState(false);
+
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
+    if (!isOtpVerified) {
+      alert("Please verify your OTP before logging in.");
+      return;
+    }
     console.log({ email, password, role });
     if (role === "guest") navigate("/guest-dashboard");
-    if (role === "coach") navigate("/coachProfile");
+    if (role === "coach") navigate("https://coachdash.arskreedashala.in/#/dashboard");
     if (role === "champ") navigate("/champProfile");
     if (role === "gym") navigate("/gymProfile");
+  };
+
+  const handleSendOtp = () => {
+    // Simulate sending OTP here (e.g., API call)
+    setIsOtpSent(true);
+    alert("OTP sent to your email.");
+  };
+
+  const handleVerifyOtp = () => {
+    // Simulate OTP verification here (e.g., API call)
+    if (otp === "123456") { // Replace with actual OTP validation logic
+      setIsOtpVerified(true);
+      alert("OTP verified successfully.");
+    } else {
+      alert("Invalid OTP, please try again.");
+    }
   };
 
   return (
@@ -35,9 +59,7 @@ const Login = () => {
 
         {/* Right Side - Login Form */}
         <div className="w-full md:w-1/2 p-6 md:p-8 bg-cyan-500">
-          {" "}
-          {/* cyan background for login form */}
-          <h2 className="text-2xl  text-white font-bold mb-6 text-center dark:text-white">
+          <h2 className="text-2xl text-white font-bold mb-6 text-center dark:text-white">
             Login to Your Account
           </h2>
           {/* Login Form */}
@@ -49,15 +71,52 @@ const Login = () => {
               >
                 Email
               </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-3 py-2 border rounded-lg shadow-sm dark:bg-gray-700 dark:text-white"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+              <div className="flex">
+                <input
+                  type="email"
+                  id="email"
+                  className="flex-grow px-3 py-2 border rounded-l-lg shadow-sm dark:bg-gray-700 dark:text-white"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                {email && (
+                  <button
+                    type="button"
+                    onClick={handleSendOtp}
+                    className="px-4 py-2 bg-blue-500 text-white rounded-r-lg hover:bg-blue-700 transition duration-300"
+                  >
+                    Send OTP
+                  </button>
+                )}
+              </div>
             </div>
+
+            {isOtpSent && (
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+                  htmlFor="otp"
+                >
+                  OTP
+                </label>
+                <input
+                  type="text"
+                  id="otp"
+                  className="w-full px-3 py-2 border rounded-lg shadow-sm dark:bg-gray-700 dark:text-white"
+                  placeholder="Enter the OTP"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                />
+                <button
+                  type="button"
+                  onClick={handleVerifyOtp}
+                  className="mt-2 w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-700 transition duration-300"
+                >
+                  Verify OTP
+                </button>
+              </div>
+            )}
 
             <div className="mb-4">
               <label
@@ -101,6 +160,7 @@ const Login = () => {
               Login
             </button>
           </form>
+
           {/* Links */}
           <div className="mt-6 text-center">
             <a

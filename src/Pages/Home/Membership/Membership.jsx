@@ -1,9 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 import SectionHeader from "../../../Components/SectionHeader/SectionHeader";
 import Container from "../../../Components/Container/Container";
 import FadeInAnimation from "../../../Components/FadeInAnimation/FadeInAnimation";
 import Reavel from "../../../Components/Reveal/Reavel";
-
 
 const memberships = [
   {
@@ -14,7 +14,7 @@ const memberships = [
       "Access to group training sessions",
       "Access to standard fitness equipment",
       "Weekly fitness assessments and tracking",
-       "Member discounts on selected sports gear and merchandise"
+      "Member discounts on selected sports gear and merchandise",
     ],
   },
   {
@@ -25,7 +25,7 @@ const memberships = [
       "Includes all Basic Membership perks",
       "Priority booking for sports courts and facilities",
       "Access to advanced training programs",
-      "Exclusive workshops and events"
+      "Exclusive workshops and events",
     ],
   },
   {
@@ -37,13 +37,18 @@ const memberships = [
       "Personalized one-on-one coaching sessions",
       "Customized nutrition and fitness plans",
       "Exclusive access to elite facilities and private areas",
-      
     ],
   },
 ];
 
-
 const Membership = () => {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
+  const handleJoinNow = (membershipType) => {
+    // Navigate to the payment page with the membership type as a state or query parameter
+    navigate("/MembershipPayment", { state: { membershipType  } });
+  };
+
   return (
     <div className="dark:bg-gray-700 bg-[#68a9d3] pb-10 lg:pb-20 text-justify" id="membership">
       <SectionHeader heading={"Membership"}></SectionHeader>
@@ -70,12 +75,14 @@ const Membership = () => {
                   {membership.price}
                 </p>
                 <ul className="list-disc list-inside dark:text-gray-300 text-gray-600">
-  {membership.benefits.map((benefit, i) => (
-    <li key={i} className="mb-2 text-center">{benefit}</li>
-  ))}
-</ul>
-
-                <button className="mt-6 bg-amber-500 text-white px-6 py-2 rounded-lg hover:bg-amber-600 transition">
+                  {membership.benefits.map((benefit, i) => (
+                    <li key={i} className="mb-2 text-center">{benefit}</li>
+                  ))}
+                </ul>
+                <button
+                  className="mt-6 bg-amber-500 text-white px-6 py-2 rounded-lg hover:bg-amber-600 transition"
+                  onClick={() => handleJoinNow(membership.title)} // Pass the membership title to the handler
+                >
                   Join Now
                 </button>
               </div>

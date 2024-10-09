@@ -189,7 +189,7 @@ import ConfirmationPage from '../Pages/Home/comePlay/ConfirmationPage';
 import ChampProfile from '../Pages/Home/Login/ChampProfile';
 import Overview from '../Pages/Home/Login/ChampProfile/Overview';
 import Training from '../Pages/Home/Login/ChampProfile/Training';
-import Feedback from '../Pages/Home/Login/ChampProfile/ Feedback';
+import Feedback from '../Pages/Home/Login/ChampProfile/Feedback';
 import CoachProfile from '../Pages/Home/Login/CoachProfile/CoachProfile';
 import Achievements from '../Pages/Home/Login/CoachProfile/Achievements';
 import Schedule from '../Pages/Home/Login/CoachProfile/Schedule';
@@ -199,6 +199,7 @@ import WorkoutPlan from '../Pages/Home/Login/GymProfile/WorkoutPlan';
 import DietPlan from '../Pages/Home/Login/GymProfile/DietPlan';
 import Performance from '../Pages/Home/Login/GymProfile/Performance';
 import AccountSettings from '../Pages/Home/Login/GymProfile/AccountSettings';
+import MembershipPayment from '../Pages/Home/Membership/MEmbershipPayment';
 
 
 const router = createBrowserRouter([
@@ -288,6 +289,7 @@ const router = createBrowserRouter([
       { path: '/signup', element: <Signup /> },
       { path: '/program/:id', element: <ProgramDetails /> },
       { path: '/app', element: <App /> },
+      { path: '/MembershipPayment', element: <MembershipPayment /> },
     ],
   },
 ]);
